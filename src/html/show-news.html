@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('nav.html')
+    <div class="list-wrapper">
+        <div class="container">
+            @@include('breadcrumb.html')
+            <div class="row">
+                <div class="col-md-3">
+                    @@include('list-nav.html')
+                </div>
+                <div class="col-md-9">
+                    <div class="content-container">
+                        <div class="title">泸州宇泉超轻饮用水有限公司成立于2008年</div>
+                        <div class="data">发布时间：2019-03-25</div>
+                        <div class="content-box">
+                            <p> 泸州宇泉超轻饮用水有限公司成立于2008年，为四川新火炬化工有限责任公司全资子公司，是国内首家实现工业化生产超轻水（低氘水）的企业；建立了国内第一个超轻水（低氘水）企业标准；并荣获四川省经信委“四川省重点技术创新项目奖”。
+                            </p>
+                            <p>母公司四川新火炬化工有限责任公司是国内唯一从事氢同位素—氘科研生产的企业；五十年专注水精馏，氢氧同位素分离技术处于国际领先水平；是国家氧化氘军用标准的起草者。</p>
+                            <p>
+                                公司不断进取、持续创新，2005年与上海交通大学生命科学技术学院、西南医科大学等开展产学研合作，进行氢氧同位素工业化生产及产品对人类健康的研究，在低氘水预防和辅助治疗癌症、糖尿病及改善
+                                人体代谢功能方面取得了大量的科研成果。
+                            </p>
+
+                            <img src="./../images/showpic.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    @@include('footer.html')
+    <script>
+        $('#list-nav').listNav({
+            menu: [['行业资讯', 'http://localhost:9999/dist/html/list-news.html'], ['研发成果', 'http://localhost:9999/dist/html/list-news1.html']]
+        })
+    </script>
+
+</body>
+
+</html>
